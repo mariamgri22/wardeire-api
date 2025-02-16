@@ -14,7 +14,8 @@ async function signUp(req: Request, res: Response, next: NextFunction) {
 
   try {
     const { user } = await UserServices.create(req.body);
-    res.send({ user, message: "user_create_success" });
+    const token = generateAuthToken(user);
+    res.send({ user, token, message: "user_create_success" });
   } catch (err) {
     next(err);
   }
