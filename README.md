@@ -1,7 +1,6 @@
-# Prime It task 
-## Authentication
+# Wardeire api
 
-## for using this app just add in .env file `appId ` and  `appSecret` (from your fb app )
+
 
 ## for start`
 
